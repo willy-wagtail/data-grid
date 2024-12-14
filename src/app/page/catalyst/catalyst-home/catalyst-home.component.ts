@@ -12,5 +12,4 @@ import { CatalystHomeOrdersComponent } from '../catalyst-home-orders/catalyst-ho
   styleUrl: './catalyst-home.component.scss'
 })
 export class CatalystHomeComponent {
-
 }

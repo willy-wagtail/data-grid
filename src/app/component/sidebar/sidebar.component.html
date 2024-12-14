@@ -1,26 +1,20 @@
-<header class="p-4 flex flex-col">
-  <div>
-    Header
-  </div>
-
-  <div>
-    <input placeholder="Search..."/>
-  </div>
+<header class="flex flex-col p-4 border-b border-zinc-950/5 dark:border-white/10">
+    <button class="rounded-lg px-2 py-2.5 text-left text-sm font-medium text-zinc-950  dark:text-white hover:bg-zinc-950/5 dark:hover:bg-white/5">
+        <span>Catalyst</span>
+    </button>
 </header>
 
-<nav class="flex-1 flex flex-col p-4">
-  @for (number of [ 1, 2, 3 ]; track number) {
-    <button class="p-2 flex justify-between items-center rounded-lg  hover:bg-zinc-200 dark:hover:bg-zinc-900">
-      <span>item {{ number }}</span>
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-        <path
-          d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
-      </svg>
-    </button>
-  }
+<nav class="flex-1 flex flex-col gap-0.5 p-4 overflow-auto">
+    @for (number of [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]; track number) {
+        <button [class.active]="number ===2"
+                class="active:dark:bg-red rounded-lg px-2 py-2.5 text-left text-sm font-medium text-zinc-950  dark:text-white hover:bg-zinc-200 dark:hover:bg-white/5">
+            <span>Item {{ number }}</span>
+        </button>
+    }
 </nav>
 
-<footer>
-  Footer
+<footer class="flex flex-col p-4  border-t border-zinc-950/5 dark:border-white/10">
+    <button class="rounded-lg px-2 py-2.5 text-left text-sm font-medium text-zinc-950  dark:text-white hover:bg-zinc-950/5 dark:hover:bg-white/5">
+        <span>Footer</span>
+    </button>
 </footer>
