@@ -1,0 +1,40 @@
+<section class="py-8 px-12">
+  <div class="mx-auto max-w-6xl">
+<!--    <h1 class="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">-->
+<!--      Good afternoon, Bubbles-->
+<!--    </h1>-->
+
+<!--    <section class="mt-8">-->
+    <section>
+      <header class="flex justify-between items-end">
+        <h2 class="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">Overview</h2>
+
+        <div>
+          <select
+            class="relative block w-full appearance-none rounded-lg py-[calc(theme(spacing[2.5])-1px)] sm:py-[calc(theme(spacing[1.5])-1px)] pl-[calc(theme(spacing[3.5])-1px)] pr-[calc(theme(spacing.10)-1px)] sm:pl-[calc(theme(spacing.3)-1px)] sm:pr-[calc(theme(spacing.9)-1px)] [&_optgroup]:font-semibold text-base/6 text-zinc-950 placeholder:text-zinc-500 sm:text-sm/6 dark:text-white dark:*:text-white border border-zinc-950/10 data-[hover]:border-zinc-950/20 dark:border-white/10 dark:data-[hover]:border-white/20 bg-transparent dark:bg-white/5 dark:*:bg-zinc-800 focus:outline-none data-[invalid]:border-red-500 data-[invalid]:data-[hover]:border-red-500 data-[invalid]:dark:border-red-600 data-[invalid]:data-[hover]:dark:border-red-600 data-[disabled]:border-zinc-950/20 data-[disabled]:opacity-100 dark:data-[hover]:data-[disabled]:border-white/15 data-[disabled]:dark:border-white/15 data-[disabled]:dark:bg-white/[2.5%]"
+            id="period"
+            name="period">
+            <option value="last_week">Last week</option>
+            <option value="last_two">Last two weeks</option>
+            <option value="last_month">Last month</option>
+            <option value="last_quarter">Last quarter</option>
+          </select>
+        </div>
+      </header>
+
+      <article class="mt-4">
+        <app-catalyst-home-overview/>
+      </article>
+    </section>
+
+    <section class="mt-14">
+      <h2 class="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
+        Orders
+      </h2>
+
+      <div class="mt-4">
+        <app-catalyst-home-orders/>
+      </div>
+    </section>
+  </div>
+</section>
